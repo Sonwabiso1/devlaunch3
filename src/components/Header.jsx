@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/devlaunch_logo.png';
 
 function Header() {
@@ -7,11 +8,11 @@ function Header() {
       <nav>
         <img src={logo} alt="DevLaunch Logo" />
         <ul className="navlist">
-          <li><a href="/">Home</a></li>
-          <li><a href="/bootcamp">Bootcamps</a></li>
-          <li><a href="/review">Review</a></li>
-          <li><a href="/contact">Contact Us</a></li>
-          <li className="sign-in"><a href="/sign-in">Sign In</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/bootcamps">Bootcamps</Link></li>
+          <li><Link to="/reviews">Reviews</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
+          <li className="sign-in"><Link to="/sign-in">Sign In</Link></li>
         </ul>
       </nav>
     </header>
