@@ -20,6 +20,7 @@ const BootcampWidgets = () => {
                 bootcamps.map((bootcamp) => (
                     <div key={bootcamp.id}>
                         <img src={bootcamp.logo} alt={`${bootcamp.name} Logo`} />
+                        {console.log(bootcamp.logo)}
                         <h4>{bootcamp.name}</h4>
                         <p>⭐⭐⭐⭐⭐</p>
                         <ul>
