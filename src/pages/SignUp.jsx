@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import '../styles/signup.css';
+import DevLaunchLogo from '../assets/devlaunch_logo.png';
 
 const SignUp = () => {
     const [leftFormData, setLeftFormData] = useState({
@@ -39,87 +40,83 @@ const SignUp = () => {
             <div className="grid-container">
                 {/* Left Grid Content */}
                 <div className="card-left-side">
-                    <div className="card">
-                        <img src="/Assets/devlaunch-removebg-preview.png" alt="Dev launch logo" className="logo" />
-                        <form className="left-form" onSubmit={handleLeftSubmit}>
-                            <label htmlFor="email">Email</label>
-                            <input
-                                name="email"
-                                id="email"
-                                type="email"
-                                required
-                                placeholder="you@example.com"
-                                value={leftFormData.email}
-                                onChange={handleLeftChange}
-                            />
+                    <img src={DevLaunchLogo} alt="Devlaunch logo" />
+                    <form className="left-form" onSubmit={handleLeftSubmit}>
+                        <label htmlFor="email">Email</label>
+                        <input
+                            name="email"
+                            id="email"
+                            type="email"
+                            required
+                            placeholder="you@example.com"
+                            value={leftFormData.email}
+                            onChange={handleLeftChange}
+                        />
 
-                            <label htmlFor="pass">Password</label>
-                            <input
-                                name="pass"
-                                id="pass"
-                                type="password"
-                                value={leftFormData.password}
-                                onChange={handleLeftChange}
-                            />
+                        <label htmlFor="pass">Password</label>
+                        <input
+                            name="password"
+                            id="pass"
+                            type="password"
+                            value={leftFormData.password}
+                            onChange={handleLeftChange}
+                        />
 
-                            <button type="submit">Sign in</button>
-                            <a href="/Pages/ForgotPassword.html">Forgot Password?</a>
-                        </form>
-                    </div>
+                        <button type="submit">Sign in</button>
+                        <a href="/Pages/ForgotPassword.html">Forgot Password?</a>
+                    </form>
                 </div>
 
                 {/* Right Grid Content */}
                 <div className="card-right-side">
-                    <div className="card">
-                        <h1>New Here?</h1>
-                        <p>Sign up and discover offered Bootcamps at your convenience</p>
-                        <form className="right-form" onSubmit={handleRightSubmit}>
-                            <label htmlFor="name">Full Name</label>
-                            <input
-                                name="name"
-                                id="name"
-                                type="text"
-                                value={rightFormData.name}
-                                onChange={handleRightChange}
-                            />
+                    <h1>New Here?</h1>
+                    <p>Sign up and discover offered Bootcamps at your convenience</p>
+                    <form className="right-form" onSubmit={handleRightSubmit}>
+                        <label htmlFor="name">Full Name</label>
+                        <input
+                            name="name"
+                            id="name"
+                            type="text"
+                            value={rightFormData.name}
+                            onChange={handleRightChange}
+                        />
 
-                            <label htmlFor="email">Email</label>
-                            <input
-                                id="email"
-                                name="email"
-                                type="email"
-                                required
-                                placeholder="you@example.com"
-                                value={rightFormData.email}
-                                onChange={handleRightChange}
-                            />
+                        <label htmlFor="email">Email</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                            placeholder="you@example.com"
+                            value={rightFormData.email}
+                            onChange={handleRightChange}
+                        />
 
-                            <label htmlFor="pass">Password</label>
-                            <input
-                                id="pass"
-                                name="pass"
-                                type="password"
-                                value={rightFormData.password}
-                                onChange={handleRightChange}
-                            />
+                        <label htmlFor="pass">Password</label>
+                        <input
+                            id="pass"
+                            name="password"
+                            type="password"
+                            value={rightFormData.password}
+                            onChange={handleRightChange}
+                        />
 
-                            <label htmlFor="confirm">Confirm Password</label>
-                            <input
-                                id="confirm"
-                                name="confirm"
-                                type="password"
-                                value={rightFormData.confirmPassword}
-                                onChange={handleRightChange}
-                            />
+                        <label htmlFor="confirm">Confirm Password</label>
+                        <input
+                            id="confirm"
+                            name="confirmPassword"
+                            type="password"
+                            value={rightFormData.confirmPassword}
+                            onChange={handleRightChange}
+                        />
 
-                            <label>
-                                <input type="checkbox" name="option" value="option" />
-                                I confirm the above information is true.
-                            </label>
+                        <label>
+                            <input type="checkbox" name="option" value="option" />
+                            I confirm the above information is true.
+                        </label>
 
-                            <button type="submit">Sign up</button>
-                        </form>
-                    </div>
+                        <button type="submit">Sign up</button>
+                    </form>
                 </div>
             </div>
         </section>
