@@ -1,5 +1,10 @@
 import React, { useState } from "react";
+import Modal from '../components/Modal';
 import '../styles/contact.css';
+import callIcon from '../assets/call.png';
+import emailIcon from '../assets/email.png';
+import facebookIcon from '../assets/facebook.png';
+import instagramIcon from '../assets/instagram.png';
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -7,6 +12,7 @@ const ContactUs = () => {
         email: '',
         message: '',
     });
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -16,6 +22,20 @@ const ContactUs = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData); // Data is processed here
+
+        // Show popup message
+        setIsModalOpen(true);
+
+        // Reset form to initial state
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+        });
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
     };
 
     return (
@@ -44,13 +64,19 @@ const ContactUs = () => {
                 
                 <section className="contact-details">
                     <ul>
-                        <li><img src="/Assets/call.png" alt="mobile number icon" /> +217 6547 8979</li>
-                        <li><img src="/Assets/email.png" alt="email icon" /> CodingStars@gmail.com</li>
-                        <li><img src="/Assets/facebook.png" alt="facebook icon" /> Coding Stars</li>
-                        <li><img src="/Assets/instagram.png" alt="instagram icon" /> Coding_Stars</li>
+                        <li><img src={callIcon} alt="mobile number icon" /> +217 6547 8979</li>
+                        <li><img src={emailIcon} alt="email icon" /> CodingStars@gmail.com</li>
+                        <li><img src={facebookIcon} alt="facebook icon" /> Coding Stars</li>
+                        <li><img src={instagramIcon} alt="instagram icon" /> Coding_Stars</li>
                     </ul>
                 </section>
             </main>
+
+            <Modal 
+                isOpen={isModalOpen} 
+                onClose={closeModal} 
+                message="Message submitted!" 
+            />
         </div>
     );
 };
