@@ -4,6 +4,8 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Review from './pages/mainReview.jsx';
+import ContactUs from './pages/ContactUs.jsx';
+import SignUp from './pages/SignUp.jsx';
 //import styles
 import './styles/index.css'
 
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/review' element={<Review/>} />
+        <Route path='/contactUs' element={<ContactUs/>}/>
+        <Route path='/signUp' element={<SignUp/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

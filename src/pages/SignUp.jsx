@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './signup.css'; // Ensure you have a corresponding CSS file
+
 
 const SignUp = () => {
     const [leftFormData, setLeftFormData] = useState({
