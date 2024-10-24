@@ -31,7 +31,7 @@ const BootcampWidgets = () => {
                         </ul>
                         
                         <button>
-                          <Link to={`/bootcamps/${bootcamp.id}`}>Learn More</Link>
+                          <Link to={`api/bootcamps/${bootcamp.id}`}>Learn More</Link>
                         </button>
                     </div>
                 ))
