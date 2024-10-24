@@ -4,22 +4,23 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Review from './pages/mainReview.jsx';
+import BootcampWidgets from './pages/BootcampWidgets.jsx';
 //import styles
-import './styles/index.css'
+import './styles/index.css';
 
 // import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
-    <Header />
+      <Header />
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/review' element={<Review/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/review' element={<Review />} />
+        <Route path='/bootcamps' element={<BootcampWidgets />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
-    
   );
 }
 

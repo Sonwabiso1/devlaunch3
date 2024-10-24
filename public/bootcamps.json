@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Capaciti",
+        "logo": "/Assets/capaciti_logo.jpg",
+        "techStack": "HTML, CSS, JavaScript, Python, etc.",
+        "onlineOnsite": "On-Site",
+        "location": "97 Durham Ave, Salt River, Cape Town, 7925",
+        "contacts": "021 409 7000"
+    },
+    {
+        "id": 2,
+        "name": "Stellenbosh",
+        "logo": "/Assets/stellies_logo.png",
+        "techStack": "HTML, CSS, JavaScript, Python, etc.",
+        "onlineOnsite": "On-Site",
+        "location": "331 Albert Rd, Woodstock, Cape Town, 7915",
+        "contacts": "021 202 5424"
+    },
+    {
+        "id": 3,
+        "name": "WeThinkCode",
+        "logo": "/Assets/wethinkcode-logo.png",
+        "techStack": "HTML, CSS, JavaScript, Python, etc.",
+        "onlineOnsite": "On-Site",
+        "location": "97 Durham Ave, Salt River, Cape Town, 7925",
+        "contacts": "021 409 7000"
+    },
+    {
+        "id": 4,
+        "name": "UWC",
+        "logo": "/Assets/uwc_logo.png",
+        "techStack": "HTML, CSS, JavaScript, Python, etc.",
+        "onlineOnsite": "On-Site",
+        "location": "Robert Sobukwe Rd, Bellville, Cape Town, 7535",
+        "contacts": "021 959 2911"
+    },
+    {
+        "id": 5,
+        "name": "UCT",
+        "logo": "/Assets/UCT_logo.jpeg",
+        "techStack": "HTML, CSS, JavaScript, Python, etc.",
+        "onlineOnsite": "On-Site",
+        "location": "Rondebosch, Cape Town, 7700",
+        "contacts": "021 409 7000"
+    },
+    {
+        "id": 6,
+        "name": "CodeSpace",
+        "logo": "/Assets/codespaceLogo.jpg",
+        "techStack": "HTML, CSS, JavaScript, Python, etc.",
+        "onlineOnsite": "On-Site",
+        "location": "6 Beach Rd, Woodstock, Cape Town, 80000",
+        "contacts": "021 685 0991"
+    },
+    {
+        "id": 7,
+        "name": "Umuzi",
+        "logo": "/Assets/Umuzi_logo.png",
+        "techStack": "HTML, CSS, JavaScript, Python, etc.",
+        "onlineOnsite": "On-Site",
+        "location": "28 Madison St, Jeppestown, Johannesburg, 2043",
+        "contacts": "021 409 7000"
+    },
+    {
+        "id": 8,
+        "name": "SheCodes",
+        "logo": "/Assets/SheCodes_logo.png",
+        "techStack": "HTML, CSS, JavaScript, Python, etc.",
+        "onlineOnsite": "Online",
+        "location": "Online",
+        "contacts": "website :)"
+    }
+]
