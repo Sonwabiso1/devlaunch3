@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/devlaunch_logo.png';
 import { Link } from 'react-router-dom';
 
@@ -8,11 +9,11 @@ function Header() {
       <nav>
         <img src={logo} alt="DevLaunch Logo" />
         <ul className="navlist">
-          <Link to="/">Home</Link>
-          <Link to="/bootcamp">Bootcamp</Link>
-          <Link to="review"> Reviews</Link>
-          <Link to="/contactUs"> Contact Us</Link>
-          <Link to="signUp"> Sign In</Link>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/bootcamps">Bootcamps</Link></li>
+          <li><Link to="/reviews">Reviews</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
+          <li className="sign-in"><Link to="/sign-in">Sign In</Link></li>
         </ul>
       </nav>
     </header>
