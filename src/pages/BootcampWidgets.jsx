@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "../styles/bootcampWidgets.css"; // Adjusted import path
+import { Link } from "react-router-dom";  // Import Link for navigation
+import "../styles/bootcampWidgets.css";
 
 const BootcampWidgets = () => {
     const [bootcamps, setBootcamps] = useState([]);
 
     useEffect(() => {
-        fetch("/bootcamps.json") // Fetching from public folder
+        fetch("/bootcamps.json")  // Fetching from public folder
             .then((response) => response.json())
             .then((data) => setBootcamps(data))
             .catch((error) => console.error("Error fetching bootcamps:", error));
@@ -27,8 +28,9 @@ const BootcampWidgets = () => {
                             <li>Location: {bootcamp.location}</li>
                             <li>Contacts: {bootcamp.contacts}</li>
                         </ul>
+                        
                         <button>
-                            <a href="/Pages/Bootcamp.html">Learn More</a>
+                          <Link to={`/bootcamps/${bootcamp.id}`}>Learn More</Link>
                         </button>
                     </div>
                 ))

@@ -47,7 +47,7 @@
     {
         "id": 6,
         "name": "CodeSpace",
-        "logo": "/Assets/codespaceLogo.jpg",
+        "logo": "/assets/codespaceLogo.jpg",
         "techStack": "HTML, CSS, JavaScript, Python, etc.",
         "onlineOnsite": "On-Site",
         "location": "6 Beach Rd, Woodstock, Cape Town, 80000",
