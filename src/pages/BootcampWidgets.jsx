@@ -6,7 +6,7 @@ const BootcampWidgets = () => {
     const [bootcamps, setBootcamps] = useState([]);
 
     useEffect(() => {
-        fetch("/bootcamps.json") // Fetching from public folder
+        fetch("/bootcamps.json")  // Fetching from public folder
             .then((response) => response.json())
             .then((data) => setBootcamps(data))
             .catch((error) => console.error("Error fetching bootcamps:", error));

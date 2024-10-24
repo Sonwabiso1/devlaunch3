@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/review" element={<Review />} />
+        <Route path="/reviews" element={<Review />} />
         <Route path="/bootcamps" element={<BootcampWidgets />} />
         {/* Add dynamic route for bootcamp details */}
         <Route path="/bootcamps/:bootcampId" element={<BootcampDetails/>} />
