@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/devlaunch_logo.png';
-import { Link } from 'react-router-dom';
 
 function Header() {
   return (

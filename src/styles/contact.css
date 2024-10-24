@@ -1,11 +1,10 @@
-body {
+body{ 
     background-color: #FFF8EE;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
-h2 {
+h1 {
     color: black;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,40 +12,53 @@ h2 {
     text-align: center;
 }
 
-/* Body heading */
+/*Body heading*/
 .body-heading {
+    grid-column: 1 / -1; 
     text-align: center;
 }
-
-/* Styling for the main heading */
 .main-heading {
     font-size: 2em; 
-    color: #333;    
+    color: #333;
+}
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
 }
 
-/* Container for the card */
+/* Form container */
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Card styling */
 .card {
     background-color: #F0D8B8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 650px; /* Adjust width as needed */
-    margin: 20px auto; /* Center the card */
+    width: 650px;
+    box-sizing: border-box;
 }
 
-/* Form styling */
+/* Form */
 form {
     display: flex;
     flex-direction: column;
 }
 
-/* Label styling */
+/* Labels */
 label {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Input and textarea styling */
+/* Inputs and Textareas */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -57,14 +69,12 @@ textarea {
     font-size: 16px;
     background-color: #FFF8EE;
 }
-
-/* Textarea specific styling */
 textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-/* Button styling */
+/* Button */
 button {
     background-color: #FFF8EE;
     color: black;
@@ -74,7 +84,67 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-
 button:hover {
-    background-color: #F0D8B8; /* Change color on hover */
+    background-color: #FFF8EE;
+}
+
+/* Contact details */
+.contact-details {
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 100px;
+    padding-right: 100px;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-details img {
+    width: 24px;
+    height: auto;
+    margin-right: 100px;
+}
+
+/* Footer */
+.footer {
+    background-color: #d49767;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.social-icons i {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin: 0;
+    color: #333;
 }

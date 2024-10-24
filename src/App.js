@@ -18,8 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/review' element={<Review/>} />
-        <Route path='/contactUs' element={<ContactUs/>}/>
-        <Route path='/signUp' element={<SignUp/>}/>
+        <Route path='/contact' element={<ContactUs/>}/>
+        <Route path='/sign-in' element={<SignUp/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
