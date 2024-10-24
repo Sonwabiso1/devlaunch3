@@ -1,0 +1,167 @@
+body{
+    background-color: #FFF8EE;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/*Body heading*/
+/* Styling for the section */
+.body-heading {
+    grid-column: 1 / -1; /* Makes the heading span across both columns */
+    text-align: center;
+}
+
+/* Styling for the heading */
+.main-heading {
+    font-size: 2em; /* Adjust font size as needed */
+    color: #333;    /* Adjust text color as needed */
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px; /* Adds space between the columns */
+}
+
+/* Container for the form */
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: #F0D8B8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 650px;
+    box-sizing: border-box;
+    
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: #FFF8EE;
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button styling */
+button {
+    background-color: #FFF8EE;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #FFF8EE;
+}
+/* Icon Section styling */
+.contact-details {
+    display:flex;
+    flex-direction: column;
+}
+
+/* List styling */
+.contact-details ul {
+    list-style: none; /* Remove default list styling */
+    padding: 100px;
+    padding-right: 100px;
+}
+
+/* List item styling */
+.contact-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Icon styling */
+.contact-details img {
+    width: 24px; 
+    height: auto;
+    margin-right: 100px; 
+}
+.footer {
+    background-color: #d49767;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.container {
+    max-width: 1200px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center text and icons */
+}
+
+.social-icons {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    justify-content: center; /* Center items horizontally */
+    gap: 15px; /* Space between icons */
+    margin-bottom: 15px; /* Space below icons */
+}
+
+.social-icon {
+    display: flex; /* Ensure icons are flex items */
+    align-items: center; /* Vertically center icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.img {
+    width: 24px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-icons i {
+    font-size: 24px; /* Adjust icon size */
+    color: #333; /* Adjust color as needed */
+}
+
+p {
+    margin: 0; /* Remove default margin */
+    color: #333; /* Adjust text color */
+}

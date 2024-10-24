@@ -1,0 +1,133 @@
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Team Section Styling */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures wrapping for small screens */
+}
+
+.member {
+    background-color: #e8d1b6;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Adds hover effect */
+}
+
+.member:hover {
+    transform: translateY(-10px); /* Hover effect for members */
+}
+
+.avatar {
+    background-color: #d3c4b2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Sponsors Section Styling */
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.sponsor-logos img {
+    width: 150px;
+    height: auto;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #d49767;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .social-icon {
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    color: #ddd;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column; /* Stacks team members vertically */
+        align-items: center;
+    }
+
+    .member {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .sponsor-logos img {
+        width: 120px; /* Smaller sponsor logos */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em; /* Smaller font size on mobile */
+    }
+
+    p {
+        font-size: 1em; /* Adjust text size for mobile */
+    }
+
+    .footer .social-icon {
+        font-size: 20px; /* Smaller social icons on mobile */
+    }
+}

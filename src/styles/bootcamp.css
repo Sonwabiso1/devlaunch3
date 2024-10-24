@@ -1,0 +1,270 @@
+/* secondary navigation for bootcamp items */
+
+.secondary-nav{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-style: solid;
+    border-color: #E6B794;
+    background-color: #FFF8EE;
+}
+.secondary-nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.secondary-nav-list a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#secondary-nav-items{
+    margin: 1rem;
+    border-style: solid;
+    /* border-width: 0.18rem; */
+    border-color: #E6B794;
+    background-color: #FFF8EE;
+}
+
+/* description section */
+
+#bootcamp-content{
+    display: flex;
+}
+
+#bootcamp-content img{
+    width: 10rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+.bootcamp-description{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* secondary nav items loaded */
+
+.courses-description{
+    margin-left: 2rem;;
+}
+
+/* bootcammp review section */
+
+#bootcamp-review-h{
+    margin: 2rem;
+}
+
+.review-description{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.review-card{
+    display: flex;
+    background-color: #F0D8B8;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.review-card-details{
+   margin-left: 2rem;
+   margin-right: 2rem;
+   margin-top: -1rem;
+}
+
+.readmore{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    background-color: #F0D8B8;
+    border-radius: 10px;
+    width: 8rem;
+    height: 2rem;
+    font-weight: bold;
+}
+
+/* review form section */
+
+.review-form{
+    background-color: #F0D8B8;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+.review-form form{
+    padding: 2rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label{
+    padding: 12px 12px 12px 0;
+}
+
+input[type=submit] {
+    background-color:#E6B794;
+    color: black;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=submit]:hover {
+    background-color:bisque;
+}
+   
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+/*financing section*/
+
+.financing-description {
+    margin: 2rem;
+    background-color: #FFF8EE;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.financing-description h3 {
+    color: #634F40;
+    font-size: 1.8rem;
+}
+
+.financing-description p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.financing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.financing-option {
+    background-color: #E6B794;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.financing-option:hover {
+    transform: translateY(-5px);
+}
+
+.financing-option h4 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.financing-option p {
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.financing-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #634F40;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.financing-link:hover {
+    background-color: #533A2C;
+}
+
+.financing-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+/* end of finance section*/
+
+/* Footer styling */
+.footer {
+    background-color: #d49767;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icon {
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-icon:hover {
+    color: #ddd;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/*end of footer section*/
