@@ -10,18 +10,25 @@ html, body {
 }
 
 .card-left-side {
-    background-color: #F0D8B8; /* Blue color for left side */
+    background-color: #F0D8B8; /* Light color for left side */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-right-side {
-    background-color: #634F40; /* Red color for right side */
+    background-color: #634F40; /* Darker color for right side */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Card styling */
 .card {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -29,7 +36,7 @@ html, body {
 /* Styling for logo */
 .logo {
     max-width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 30px; /* Adjust as needed */
 }
 
 /* Form styling */
@@ -78,15 +85,11 @@ html, body {
 }
 
 /* Heading and paragraph styling */
-.right-side h1 {
+.card-right-side h1 {
     margin-top: 0;
     color: #333; /* Darker color for headings */
 }
 
-.right-side p {
+.card-right-side p {
     color: #666; /* Gray color for text */
 }
-
-
-
-
