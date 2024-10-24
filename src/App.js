@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/review' element={<Review />} />
+        <Route path='/reviews' element={<Review />} />
         <Route path='/bootcamps' element={<BootcampWidgets />} />
       </Routes>
       <Footer />
