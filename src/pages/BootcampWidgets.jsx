@@ -28,7 +28,7 @@ const BootcampWidgets = () => {
                             <li>Location: {bootcamp.location}</li>
                             <li>Contacts: {bootcamp.contacts}</li>
                         </ul>
-                        {/* Link to the bootcamp details page with bootcamp ID */}
+                        
                         <button>
                           <Link to={`/bootcamps/${bootcamp.id}`}>Learn More</Link>
                         </button>
