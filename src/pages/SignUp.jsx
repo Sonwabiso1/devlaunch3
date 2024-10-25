@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/signup.css';
 import DevLaunchLogo from '../assets/devlaunch_logo.png';
 
+
 const SignUp = () => {
+    const navigate = useNavigate();
+
     const [leftFormData, setLeftFormData] = useState({
         email: '',
         password: ''
@@ -27,12 +31,33 @@ const SignUp = () => {
 
     const handleLeftSubmit = (e) => {
         e.preventDefault();
-        console.log('Left form submitted:', leftFormData);
+
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+        console.log('Stored User:', storedUser); // Debugging log
+
+        if (
+            storedUser && 
+            storedUser.email === leftFormData.email && 
+            storedUser.password === leftFormData.password
+        ) {
+            console.log('User signed in:', leftFormData);
+            navigate('/bootcamps'); // Navigate to Bootcamp page
+        } else {
+            alert('Invalid credentials. Please try again.'); // Display an error message
+        }
     };
 
     const handleRightSubmit = (e) => {
         e.preventDefault();
-        console.log('Right form submitted:', rightFormData);
+        const userData = {
+            name: rightFormData.name,
+            email: rightFormData.email,
+            password: rightFormData.password,
+        };
+
+        localStorage.setItem('user', JSON.stringify(userData));
+        console.log('User registered:', userData);
+        alert('Registration successful! You can now sign in.');
     };
 
     return (
