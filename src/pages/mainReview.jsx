@@ -59,7 +59,7 @@ export default function Review() {
         <h2><b>Bootcamp Reviews</b></h2>
         <div className="bootcamp-review">
           <div className="bootcamp1">
-            <img src="./src/assets/wethinkcode-logo.png" alt="wethinkcode" />
+          <img src="/images/wethinkcode-logo.png" alt="wethinkcode" />
             <p>wethinkcode</p>
             <h3>⭐⭐⭐⭐⭐</h3>
             <h4><b>Jonathan Hugo</b></h4>
@@ -68,7 +68,7 @@ export default function Review() {
             <button>Learn more</button>
           </div>
           <div className="bootcamp2">
-            <img src="./src/assets/codespaceLogo.jpg" alt="Codespace" />
+            <img src="/images/codespaceLogo.jpg" alt="Codespace" />
             <p>Codespace Academy</p>
             <h3>⭐⭐⭐⭐⭐</h3>
             <h4><b>John Murray</b></h4>
@@ -77,7 +77,7 @@ export default function Review() {
             <button>Learn more</button>
           </div>
           <div className="bootcamp3">
-            <img src="./src/assets/uwc_logo.png" alt="uwc" />
+            <img src="/images/uwc_logo.png" alt="uwc" />
             <p>UWC</p>
             <h3>⭐⭐⭐⭐⭐</h3>
             <h4><b>Stewart Langley</b></h4>
